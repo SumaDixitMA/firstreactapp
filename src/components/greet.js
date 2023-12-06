@@ -1,8 +1,12 @@
 import React from 'react'
 
-// function Greet(){
-//     return <h1>Hello suma</h1>
-// }
-export const Greet = () => <h1>Welcome Suma</h1>
-
-// export default Greet
+const Greet = props => {
+console.log(props.name)
+return (
+<div>
+<h3>Welcome {props.name} A.k.a {props.surname}</h3>
+{props.children}
+</div>
+)
+}
+export default Greet
